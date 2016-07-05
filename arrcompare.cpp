@@ -30,7 +30,7 @@ int main(void) {
 	bool isMax = true;
 	int arr[4] = { 1, 2, 3, 4 };
 
-	cout << "0»ò1" << endl;
+	cout << "0??" << endl;
 	cin >> isMax;
 	cout << X::arrMaxMin(arr, 4, isMax) << endl;
 

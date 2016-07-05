@@ -9,7 +9,7 @@ namespace A {
 	}
 }
 
-namespace B {
+namespace B{
 	int x = 1;
 	void fun() {
 		cout << "B" << endl;
@@ -19,18 +19,18 @@ int main(void)
 {
 	cout << A::x << endl;
 	B::fun();
-	cout << "ÊäÈëÊý×Ö" << endl;
+	cout << "è¾“å…¥æ•°å­—" << endl;
 	int x = 0;
 	cin >> x;
-	cout << "Êä³öÊý×Ö:" << endl;
+	cout << "è¾“å‡ºæ•°å­—:" << endl;
 	cout << oct << x << endl;
 	cout << dec << x << endl;
 	cout << hex << x << endl;
 
-	cout << "ÊäÈë²¼¶ûÖµ(0,1)" << endl;
+	cout << "è¾“å…¥å¸ƒå°”å€¼(0,1)" << endl;
 	bool y = false;
 	cin >> y;
-	cout << "²¼¶ûÖµ:" << endl;
+	cout << "å¸ƒå°”å€¼:" << endl;
 	cout << boolalpha << y << endl;
 
 	system("pause");
