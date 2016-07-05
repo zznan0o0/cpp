@@ -1,13 +1,15 @@
-### #include<stdlib.h>
+### stdlib.h
 
 ```c++
+#include<stdlib.h>
 #include<stdlib.h>
 //任意键以继续
 system("pause");
 ```
 
-### #include<iostream>
+### iostream
 ```c++
+#include<iostream>
 //声明调用命名空间
 using namespace std;
 cin >> 输入流;
