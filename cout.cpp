@@ -19,18 +19,18 @@ int main(void)
 {
 	cout << A::x << endl;
 	B::fun();
-	cout << "è¾“å…¥æ•°å­—" << endl;
+	cout << "ÊäÈëÊý×Ö" << endl;
 	int x = 0;
 	cin >> x;
-	cout << "è¾“å‡ºæ•°å­—:" << endl;
+	cout << "Êä³öÊý×Ö:" << endl;
 	cout << oct << x << endl;
 	cout << dec << x << endl;
 	cout << hex << x << endl;
 
-	cout << "è¾“å…¥å¸ƒå°”å€¼(0,1)" << endl;
+	cout << "ÊäÈë²¼¶ûÖµ(0,1)" << endl;
 	bool y = false;
 	cin >> y;
-	cout << "å¸ƒå°”å€¼:" << endl;
+	cout << "²¼¶ûÖµ:" << endl;
 	cout << boolalpha << y << endl;
 
 	system("pause");
