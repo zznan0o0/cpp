@@ -118,7 +118,36 @@ int main(){
 	return 0;
 }
 ```
+### 内存管理
 ```c++
+//c
+void *malloc(size_t size);
+void free(void *memblock);
+//c++
+new;
+delete;
+
+int *p = new int[1000];
+
+if(NULL == p){
+	//失败
+}
+
+int *p = new int;
+if(NULL == p){
+	//失败
+}
+delete p;
+//设置null防止重复回收出现异常
+p = NULL;
+
+int *p = new int[1000];
+if(NULL == p){
+	//
+}
+
+delete []p;
+p = NULL;
 ```
 ```c++
 ```
