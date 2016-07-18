@@ -149,5 +149,67 @@ if(NULL == p){
 delete []p;
 p = NULL;
 ```
+### 类
 ```c++
+class dog{
+//暴露
+public:
+	char name[20];
+	int age;
+	int type;
+//隐藏
+private:
+	void speak();
+	void run();
+//受保护的
+protected:
+}
+```
+### 从栈中实例化对象
+```c++
+class TV{
+public:
+	char name[20];
+	int type;
+
+	void changeVol();
+	void power();
+}
+
+int main(){
+	TV tv;
+
+	TV tv[20];
+
+	return 0;
+}
+```
+### 从对中实例化对象
+
+		注意：调用对象的成员和成员函数的时候，使用->和.的区别在于，前者是指针调用，后者是对象调用。而不是视频里所说的根据堆和栈来区别。
+```c++
+int main(){
+	TV *p = new TV();
+	TV *q = new TV[20];
+
+	delete p;
+	delete []q;
+	return 0;
+}
+```
+
+### 对象访问
+```c++
+int main(){
+	TV tv;
+	tv.type = 0;
+	tv.changeVol();
+	return 0;
+}
+//堆中
+int main(){
+	TV *p = new TV();
+	p -> type = 0;
+	p -> changeVol();
+}
 ```
